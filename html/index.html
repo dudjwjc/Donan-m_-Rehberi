@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donanım Arşivim</title>
+    <style>
+        body { margin: 0; font-family: 'Segoe UI', sans-serif; background-color: #0f1115; color: #ffffff; }
+        header { padding: 60px 20px; text-align: center; background: linear-gradient(135deg, #1e293b 0%, #0f1115 100%); border-bottom: 3px solid #3b82f6; }
+        h1 { margin: 0; font-size: 2.5em; letter-spacing: 1px; }
+        
+        .container { max-width: 1000px; margin: 40px auto; padding: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; }
+        .card { background: #1a1d23; border-radius: 15px; overflow: hidden; border: 1px solid #374151; text-decoration: none; color: white; display: flex; flex-direction: column; transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); border-color: #3b82f6; box-shadow: 0 10px 20px rgba(59, 130, 246, 0.2); }
+        .card img { width: 100%; height: 180px; object-fit: contain; background: #fff; padding: 10px; box-sizing: border-box; }
+        .card-body { padding: 20px; text-align: center; }
+        .btn { padding: 10px 20px; background: #3b82f6; border-radius: 5px; color: white; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" style="text-decoration:none; color:inherit;">
+            <h1>Donanım Arşivim</h1>
+        </a>
+    </header>
+
+    <div class="container">
+        <a href="detay-asus.html" class="card">
+            <img src="indir.png" alt="ASUS">
+            <div class="card-body"><h3>ASUS Prime H610</h3><span class="btn">İncele</span></div>
+        </a>
+        
+        <a href="detay-msi.html" class="card">
+            <img src="ms.jpg" alt="MSI">
+            <div class="card-body"><h3>MSI Pro B760M</h3><span class="btn">İncele</span></div>
+        </a>
+        
+        <a href="detay-asus-retro.html" class="card">
+            <img src="asus-retro.jpg" alt="ASUS Retro">
+            <div class="card-body"><h3>ASUS P5Q Pro</h3><span class="btn">İncele</span></div>
+        </a>
+        
+        <a href="detay-gigabyte.html" class="card">
+            <img src="gigabyte.png" alt="Gigabyte">
+            <div class="card-body"><h3>Gigabyte B550M</h3><span class="btn">İncele</span></div>
+        </a>
+
+        <a href="detay-asus-rog.html" class="card">
+            <img src="asus-rog.jpg" alt="ASUS ROG">
+            <div class="card-body"><h3>ASUS ROG Z890</h3><span class="btn">İncele</span></div>
+        </a>
+        
+        <a href="detay-msi-b650.html" class="card">
+            <img src="msi-mag.jpg" alt="MSI MAG">
+            <div class="card-body"><h3>MSI MAG B650</h3><span class="btn">İncele</span></div>
+        </a>
+        
+        <a href="detay-p5kpl.html" class="card">
+            <img src="asus-p5k.jpg" alt="ASUS P5KPL">
+            <div class="card-body"><h3>ASUS P5KPL-AM</h3><span class="btn">İncele</span></div>
+        </a>
+        
+        <a href="detay-gigabyte-ep45.html" class="card">
+            <img src="gigabyte-ga.jpg" alt="Gigabyte P45">
+            <div class="card-body"><h3>Gigabyte P45</h3><span class="btn">İncele</span></div>
+        </a>
+    </div>
+
+</body>
+</html>
