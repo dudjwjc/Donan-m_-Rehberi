@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anakartlar - Donanım Rehberi</title>
+    <title>Anakartlar - Unit X</title>
     <style>
-        body { margin: 0; font-family: 'Segoe UI', sans-serif; background-color: #0f1115; color: #ffffff; padding: 20px; }
-        .back-btn { display: inline-block; margin-bottom: 20px; color: #3b82f6; text-decoration: none; }
+        /* Düzen aynı, renkler Unit X mavisi */
+        body { margin: 0; font-family: 'Segoe UI', sans-serif; background-color: #0f172a; color: #ffffff; padding: 20px; }
+        .back-btn { display: inline-block; margin-bottom: 20px; color: #38bdf8; text-decoration: none; font-weight: bold; }
         .list-container { max-width: 800px; margin: auto; }
-        #searchInput { width: 100%; padding: 15px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #374151; background: #1a1d23; color: white; font-size: 16px; box-sizing: border-box; }
-        #searchInput:focus { outline: 2px solid #3b82f6; }
-        .item { background: #1a1d23; padding: 15px; margin-bottom: 10px; border-radius: 8px; border: 1px solid #374151; transition: 0.2s; }
-        .item:hover { border-color: #3b82f6; }
+        #searchInput { width: 100%; padding: 15px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #334155; background: #1e293b; color: white; font-size: 16px; box-sizing: border-box; }
+        #searchInput:focus { outline: 2px solid #38bdf8; }
+        .item { background: #1e293b; padding: 15px; margin-bottom: 10px; border-radius: 8px; border: 1px solid #334155; transition: 0.2s; }
+        .item:hover { border-color: #38bdf8; }
         a { color: white; text-decoration: none; display: block; font-weight: 500; }
-        .category-title { color: #9ca3af; font-size: 14px; margin: 20px 0 10px 5px; text-transform: uppercase; letter-spacing: 1px; }
+        .category-title { color: #38bdf8; font-size: 14px; margin: 20px 0 10px 5px; text-transform: uppercase; letter-spacing: 1px; font-weight: bold; }
     </style>
 </head>
 <body>
     <div class="list-container">
         <a href="index.html" class="back-btn">← Ana Sayfaya Dön</a>
-        <h1>Anakartlar</h1>
+        <h1 style="border-left: 4px solid #38bdf8; padding-left: 15px;">Anakart Birimleri</h1>
         
         <input type="text" id="searchInput" placeholder="Model ara (örn: ASUS, MSI, Retro)..." onkeyup="filterList()">
 
@@ -137,12 +138,10 @@
             
             for (let i = 0; i < items.length; i++) {
                 let text = items[i].textContent || items[i].innerText;
-                
-                // Eğer aranan kelime (filter), item içindeki metinde varsa göster, yoksa gizle
                 if (text.toUpperCase().indexOf(filter) > -1) {
-                    items[i].style.display = ""; // Göster
+                    items[i].style.display = ""; 
                 } else {
-                    items[i].style.display = "none"; // Gizle
+                    items[i].style.display = "none"; 
                 }
             }
         }

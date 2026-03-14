@@ -1,0 +1,74 @@
+/* Unit X Genel Stilleri */
+body { 
+    margin: 0; 
+    font-family: 'Segoe UI', sans-serif; 
+    background-color: #0f172a; 
+    color: #e6e6e6; 
+    line-height: 1.6; 
+}
+
+.container { 
+    max-width: 900px; 
+    margin: 40px auto; 
+    padding: 20px; 
+    background: #1e293b; 
+    border-radius: 20px; 
+    border: 1px solid #334155; 
+}
+
+.btn-container { 
+    margin-bottom: 20px; 
+}
+
+.back-btn, .support-btn { 
+    display: inline-block; 
+    padding: 10px 20px; 
+    border-radius: 8px; 
+    font-weight: bold; 
+    text-decoration: none; 
+}
+
+.back-btn { 
+    background: #38bdf8; 
+    color: #0f172a; 
+}
+
+.support-btn { 
+    background: #10b981; 
+    margin-left: 10px; 
+    color: white; 
+}
+
+.back-btn:hover { background: white; }
+.support-btn:hover { background: #059669; }
+
+img { 
+    width: 100%; 
+    border-radius: 12px; 
+    margin-bottom: 20px; 
+    border: 1px solid #334155; 
+}
+
+h1 { 
+    color: #38bdf8; 
+    border-bottom: 2px solid #334155; 
+    padding-bottom: 10px; 
+}
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px; 
+    background: #0f172a; 
+}
+
+th, td { 
+    border: 1px solid #334155; 
+    padding: 12px; 
+    text-align: left; 
+}
+
+th { 
+    color: #38bdf8; 
+    background: #1e293b; 
+}

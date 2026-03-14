@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İşlemciler - Donanım Rehberi</title>
+    <title>İşlemciler - Unit X</title>
     <style>
-        body { margin: 0; font-family: 'Segoe UI', sans-serif; background-color: #0f1115; color: #ffffff; padding: 20px; }
-        .back-btn { display: inline-block; margin-bottom: 20px; color: #3b82f6; text-decoration: none; }
+        body { margin: 0; font-family: 'Segoe UI', sans-serif; background-color: #0f172a; color: #ffffff; padding: 20px; }
+        .back-btn { display: inline-block; margin-bottom: 20px; color: #38bdf8; text-decoration: none; font-weight: bold; }
         .list-container { max-width: 800px; margin: auto; }
-        #searchInput { width: 100%; padding: 15px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #374151; background: #1a1d23; color: white; font-size: 16px; box-sizing: border-box; }
-        #searchInput:focus { outline: 2px solid #3b82f6; }
-        .item { background: #1a1d23; padding: 15px; margin-bottom: 10px; border-radius: 8px; border: 1px solid #374151; transition: 0.2s; }
-        .item:hover { border-color: #3b82f6; }
+        #searchInput { width: 100%; padding: 15px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #334155; background: #1e293b; color: white; font-size: 16px; box-sizing: border-box; }
+        #searchInput:focus { outline: 2px solid #38bdf8; }
+        .item { background: #1e293b; padding: 15px; margin-bottom: 10px; border-radius: 8px; border: 1px solid #334155; transition: 0.2s; }
+        .item:hover { border-color: #38bdf8; }
         a { color: white; text-decoration: none; display: block; font-weight: 500; }
-        .category-title { color: #9ca3af; font-size: 14px; margin: 20px 0 10px 5px; text-transform: uppercase; letter-spacing: 1px; }
+        .category-title { color: #38bdf8; font-size: 14px; margin: 20px 0 10px 5px; text-transform: uppercase; letter-spacing: 1px; font-weight: bold; }
     </style>
 </head>
 <body>
     <div class="list-container">
         <a href="index.html" class="back-btn">← Ana Sayfaya Dön</a>
-        <h1>İşlemciler (CPU)</h1>
+        <h1 style="border-left: 4px solid #38bdf8; padding-left: 15px;">İşlemci Birimleri (CPU)</h1>
         
         <input type="text" id="searchInput" placeholder="Marka veya model ara (Intel, AMD, Ryzen, Core)..." onkeyup="filterList()">
 
@@ -30,7 +30,6 @@
             <div class="item"><a href="i7-12700k.html">Intel Core i7-12700K</a></div>
             <div class="item"><a href="intel-pentium-3.html">Intel Pentium III (Coppermine)</a></div>
             <div class="item"><a href="intel-xeon-platinum-8380.html">Intel Xeon Platinum 8380</a></div>
-
 
             <div class="category-title">AMD İşlemciler</div>
             <div class="item"><a href="ryzen-7950x.html">AMD Ryzen 9 7950X</a></div>
